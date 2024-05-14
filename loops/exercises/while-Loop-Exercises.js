@@ -9,14 +9,14 @@ let altitude = 0;
   a. Query the user for the starting fuel level. Validate that the user enters a positive, integer value greater than 5000 but less than 30000. */
 
 while (fuelLevel < 5000 || fuelLevel > 30000 || isNaN(fuelLevel)) {
-  fuelLevel = question("Enter starting fuel level between 5,000 and 30,000: ");
+  fuelLevel = input.question("Enter starting fuel level between 5,000 and 30,000: ");
  }
 
 
 //b. Use a second loop to query the user for the number of astronauts (up to a maximum of 7). Validate the entry.
 
 while (numAstronauts > 7 || numAstronauts < 1) {
-  numAstronauts = Number(question("Enter the number of Astronauts, up to 7 maximum: "));
+  numAstronauts = Number(input.question("Enter the number of Astronauts, up to 7 maximum: "));
 }
 
 //c. Use a final loop to monitor the fuel status and the altitude of the shuttle. Each iteration, decrease the fuel level by 100 units for each astronaut aboard. Also, increase the altitude by 50 kilometers.
