@@ -4,4 +4,7 @@ function randomFromArray(arr){
   //Your code here to select a random element from the array passed to the function.
 }
 
-module.exports = randomFromArray;
+//module.exports = randomFromArray;
+module.exports = {
+  randomFromArray: randomFromArray
+};
