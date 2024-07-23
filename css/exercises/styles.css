@@ -1,1 +1,26 @@
 /* Start adding your styling below! */ 
+/* change background color of body to yellow */
+body {
+    background-color: yellow;
+}
+/* change text color all paragraph to green */
+p {
+    color: green;
+}
+/* class to align text to center */
+.center {
+    text-align: center;
+}
+/* set font size for h1 elements */
+h1, h2 {
+    font-size: 36px;
+}
+/* change color of element/s with id "cool-text" to blue */
+#cool-text {
+    color: blue; /* change color to blue */
+}
+
+/* change color of element/s with id "list-color" to blueviolet */
+#list-color {
+    color: blueviolet; /* change color of ordered list elements */
+}
