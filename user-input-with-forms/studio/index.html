@@ -4,7 +4,16 @@
 	<meta charset="utf-8">
 	<script>
 		// TODO: create a handler
-		function setSearchEngine(){
+		function setSearchEngine(event){
+
+			let textCheck = document.querySelector('input[name=q]');
+			let radioCheck = document.querySelector('input[name=engine]');
+			if (textCheck.value === "" || radioCheck.value === null) {
+				alert('Please enter a search and select a search engine.')
+				event.preventDefault();
+				return false;
+			}
+
 			let actions = {
 				"google": "https://www.google.com/search",
 				"duckDuckGo": "https://duckduckgo.com/",
